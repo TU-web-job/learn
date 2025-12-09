@@ -1,0 +1,40 @@
+.wrapper {
+    display: grid;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.wrapper h2 {
+    display: flex;
+    justify-content: center;
+    color: #8b4513;
+}
+
+.contentsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+}
+
+.container {
+    padding: 8px;
+    border: 1.5px solid #000;
+    box-shadow: 2px 2px 4px #a9a9a9;
+    border-radius: 4px;
+    gap: 8px;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+}
+
+.container h3 {
+    color: #8b4513;
+    padding: 4px;
+    border-bottom: 2px solid #a9a9a9;
+}
+
+.container p {
+    color: #d2691e;
+}

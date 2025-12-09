@@ -1,0 +1,38 @@
+.wrapper {
+    background-color: #faebd7;
+    padding: 8px;
+    color: #8b4513;
+}
+
+.wrapper h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 120px;
+}
+
+.textContents li {
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    margin-top: 4px;
+}
+
+.textContents li span {
+    font-weight: bold;
+}
+
+.mapContents {
+    padding: 12px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}

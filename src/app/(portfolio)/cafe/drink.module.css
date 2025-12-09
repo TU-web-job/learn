@@ -1,0 +1,83 @@
+.wrapper {
+    background-color: #8b4513;
+    color: #faebd7;
+    margin-top: 24px;
+    padding: 20px;
+}
+
+.wrapper h2, .menuContainer h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.menuWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 12px;
+    gap: 36px;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: clip;
+}
+
+@media ( max-width: 640px) {
+    .menuWrapper {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 12px 8px;
+    }
+}
+
+.menuContainer {
+    min-width: 0;
+    max-width: 100%;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 1px solid #faebd7;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #8b4513;
+    padding: 8px;
+}
+
+.menuContainer span {
+    font-weight: bolder;
+}
+
+.imgWrapper {
+    padding: 16px;
+}
+
+.drinkImg {
+    border-radius: 24px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+    box-sizing: border-box;
+    display: block;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+.in {
+    opacity: 1;
+    transform: none;
+}
+
+.animate {
+    transition: opacity .6s ease, transform .6s ease;
+}
+
+@media (prefers-reduced-motion: reduce){
+    .animate {
+        transition: none;
+    }
+}

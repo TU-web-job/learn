@@ -1,0 +1,42 @@
+.access {
+    color: #cd853f;
+    background-color: #f8f4e6;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 36px;
+    position: relative;
+    z-index: 100;
+    border-bottom: 1px solid #cd853f;
+    width: 100%;
+}
+
+.txtWrapper h2 {
+    text-decoration: underline;
+}
+
+.txtWrapper p {
+    font-weight: bold;
+}
+
+.txtWrapper, .mapWrapper {
+    min-width: 0;
+    padding: 20px;
+}
+
+.mapWrapper {
+    position: relative;
+    outline: 3px solid #cd853f;
+    border-radius: 8px;
+    aspect-ratio: 4/3;
+    overflow: hidden;
+}
+
+.accessMap {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}

@@ -1,0 +1,46 @@
+.content {
+    margin-top: 350px;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 100%;
+    font-family: 
+        var(--font-josefin),
+        system-ui, -apple-system, BlinkMacSystemFont, 
+        'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
+        'Open Sans', 'Helvetica Neue', sans-serif,
+        Meiryo, "Hiragino Sans", "Yu Gothic UI";
+    letter-spacing: 0.02em;
+    font-variant-numeric: tabular-nums;
+    color: #cd853f;
+    background-color: #f8f4e6;
+    z-index: 10;
+    position: relative;
+    border-bottom: 1px solid #cd853f;
+}
+
+.txtWrapper {
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.imgWrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.imgWrapper img {
+    width: 55%;
+    height: auto;
+    border-radius: 30px;
+    padding: 20px;
+    display: block;
+}
+
+.content:nth-of-type(even) .txtWrapper {
+    justify-content: start;
+}
+
+.content:nth-of-type(even) .imgWrapper {
+    justify-content: flex-end;
+}
