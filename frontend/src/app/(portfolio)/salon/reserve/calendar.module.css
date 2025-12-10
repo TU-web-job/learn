@@ -7,3 +7,12 @@
     color: #cd853f;
     box-sizing: border-box;
 }
+
+.toggle {
+    text-decoration: underline;
+}
+
+.toggle:hover {
+    color: #00f;
+    cursor: pointer;
+}
