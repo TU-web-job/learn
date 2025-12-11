@@ -1,7 +1,7 @@
 import style from "./contact.module.css";
 
-export default function ContactForm() {
-    return (
+export default function ContactForm(){
+    return(
         <section className={style.contact}>
             <h2>Contact Form</h2>
             <nav className={style.formWrapper}>
@@ -10,7 +10,5 @@ export default function ContactForm() {
                 <p>E-mail : <input type="email"/></p>
             </nav>
         </section>
-    );
+    )
 }
-
-
