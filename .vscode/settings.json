@@ -1,3 +1,25 @@
 {
-    "git.ignoreLimitWarning": true
-}
+    "git.ignoreLimitWarning": true,
+    // Java言語サーバが使うJDK
+    "java.configuration.runtimes": [
+    {
+      "name": "JavaSE-17",
+      "path": "/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home",
+      "default": true
+    }
+  ],
+  
+    // Gradle/Mavenの変更を自動反映
+    "java.configuration.updateBuildConfiguration": "automatic",
+  
+    // 自動インポート＆保存時に整理
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    },
+  
+    // インポート順の例
+    "java.completion.importOrder": ["java", "jakarta", "org", "com"],
+  
+    // マルチルート構成でGradleを優先認識
+    "java.autobuild.enabled": true
+  }
