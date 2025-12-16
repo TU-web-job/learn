@@ -8,11 +8,28 @@
     box-sizing: border-box;
 }
 
-.toggle {
+.modalText {
     text-decoration: underline;
 }
 
-.toggle:hover {
-    color: #00f;
+.modalText:hover {
+    color: #ff7f50;
     cursor: pointer;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #cd853f;
+    width: 60%;
+    background-color: #f0f8ff;
+    padding: 20px;
+    margin: 12px;
+    border-radius: 12px;
+}
+
+.stylieText span{
+    font-weight: bold;
 }
