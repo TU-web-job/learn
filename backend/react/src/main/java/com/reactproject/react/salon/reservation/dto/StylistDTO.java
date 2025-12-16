@@ -8,17 +8,15 @@ package com.reactproject.react.salon.reservation.dto;
 import java.time.LocalDate;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
 /**
  *
  * @author tu
  */
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Getter
-@Setter
 public class StylistDTO {
 
     private String stylistName;

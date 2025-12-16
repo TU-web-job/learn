@@ -23,7 +23,7 @@ import lombok.RequiredArgsConstructor;
  */
 @Service
 @RequiredArgsConstructor
-public class StylistServiceImpl implements StylistService{
+public class StylistServiceImpl implements StylistService {
 
     private final StylistRepository stylistRepository;
 
@@ -36,9 +36,9 @@ public class StylistServiceImpl implements StylistService{
         try {
             dtoList = stylistRepository.findByStylistDTO();
         } catch(Exception e){
-            e.printStackTrace();
             throw new NotFoundException("データの取得に失敗しました。");
         }
+        
         return dtoList;
     }
 
