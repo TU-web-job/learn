@@ -25,5 +25,9 @@ public class StylistDTO {
 
     private LocalDate birthday;
 
+    private String birthYear;
+
+    private Integer position;
+
     private String positionName;
 }

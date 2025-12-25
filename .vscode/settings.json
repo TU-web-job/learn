@@ -18,8 +18,10 @@
     },
   
     // インポート順の例
-    "java.completion.importOrder": ["java", "jakarta", "org", "com"],
+    "java.completion.importOrder": [
+      "java", "jakarta", "org", "com","#"],
   
     // マルチルート構成でGradleを優先認識
     "java.autobuild.enabled": true
+
   }

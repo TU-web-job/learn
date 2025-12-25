@@ -8,6 +8,11 @@
     box-sizing: border-box;
 }
 
+.calendar h2 {
+    display: flex;
+    justify-content: center;
+}
+
 .modalText {
     text-decoration: underline;
 }
@@ -28,6 +33,10 @@
     padding: 20px;
     margin: 12px;
     border-radius: 12px;
+}
+
+.list ul {
+    list-style: none;
 }
 
 .stylieText span{

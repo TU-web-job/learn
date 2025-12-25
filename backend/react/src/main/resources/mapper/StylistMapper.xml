@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//JP"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.reactproject.react.salon.reservation.mapper.StylistMapper">
+    <resultMap id="StylistDTO" type="com.reactproject.react.salon.reservation.dto.StylistDTO">
+        <result property="stylistName" column="stylist_name" />
+        <result property="debutYear" column="debut_year" />
+        <result property="birthday" column="birthday" />
+        <result property="position" column="position" />
+    </resultMap>
+    <select id="findAll" resultMap="StylistDTO">
+        SELECT s.stylist_name AS stylist_name, 
+        s.debut_year AS debut_year, 
+        s.birthday AS birthday, 
+        sp.position AS position
+        FROM stylist s
+        LEFT JOIN stylist_position sp 
+        ON sp.position = s.position
+        ORDER BY s.stylist_id
+    </select>
+</mapper>
